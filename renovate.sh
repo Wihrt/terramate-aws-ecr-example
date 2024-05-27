@@ -59,7 +59,6 @@ docker exec --user git "$gitea_container_name" gitea admin user create \
 curl \
     --silent \
     --show-error \
-    --fail-with-body \
     -u "$RENOVATE_USERNAME:$RENOVATE_PASSWORD" \
     -X 'PATCH' \
     -H 'Accept: application/json' \
@@ -77,7 +76,6 @@ echo "Creating Gitea $RENOVATE_USERNAME user personal access token..."
 curl \
     --silent \
     --show-error \
-    --fail-with-body \
     -u "$RENOVATE_USERNAME:$RENOVATE_PASSWORD" \
     -X POST \
     -H "Content-Type: application/json" \
@@ -93,7 +91,6 @@ export RENOVATE_TOKEN
 curl \
     --silent \
     --show-error \
-    --fail-with-body \
     -H "Authorization: token $RENOVATE_TOKEN" \
     -H 'Accept: application/json' \
     "$gitea_url/api/v1/version" \
@@ -105,7 +102,6 @@ echo "Creating Gitea $RENOVATE_USERNAME test repository..."
 curl \
     --silent \
     --show-error \
-    --fail-with-body \
     -u "$RENOVATE_USERNAME:$RENOVATE_PASSWORD" \
     -X POST \
     -H 'Accept: application/json' \
