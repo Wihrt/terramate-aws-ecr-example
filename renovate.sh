@@ -151,6 +151,7 @@ docker run \
   --env RENOVATE_PR_CONCURRENT_LIMIT \
   --env LOG_LEVEL=debug \
   --env LOG_FORMAT=json \
+  --env RENOVATE_ALLOWED_POST_UPGRADE_COMMANDS="^terramate generate$" \
   "renovate:$renovate_version" \
   --platform=gitea \
   --git-url=endpoint \
