@@ -19,7 +19,7 @@
       "extractVersionTemplate": "{{#if extractVersion}}{{{extractVersion}}}{{else}}^v?(?<version>.+)${{/if}}"
     },
   ],
-  "allowedPostUpgradeCommands": ["terramate generate"]
+  "allowedPostUpgradeCommands": ["terramate generate"],
   "postUpgradeTasks": {
     "commands": ["terramate generate"]
   }
