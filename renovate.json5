@@ -22,9 +22,10 @@
     "packageRules": [
         {
             "matchDepNames": [
-                "hashicorp/aws"
+                "hashicorp/aws",
+                "aws"
             ],
-            "groupName": "hashicorp/aws"
+            "groupName": "hashicorp-aws"
         }
     ]
 }
