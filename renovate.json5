@@ -14,11 +14,6 @@
             "extractVersionTemplate": "{{#if extractVersion}}{{{extractVersion}}}{{else}}^v?(?<version>.+)${{/if}}"
         }
     ],
-    "postUpgradeTasks": {
-        "commands": [
-            "terramate generate"
-        ]
-    },
     "packageRules": [
         {
             "matchDepNames": [
