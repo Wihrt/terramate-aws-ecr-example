@@ -38,3 +38,8 @@ globals "terraform" "providers" "aws" {
   # renovate: datasource=terraform-provider depName=aws
   version = "5.45.0"
 }
+
+globals "terraform" "providers" "postgresql" {
+    # renovate: datasource=terraform-provider depName=doctolib/postgresql
+    version = "2.21.0"
+}
