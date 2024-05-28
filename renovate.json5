@@ -21,11 +21,12 @@
     },
     "packageRules": [
         {
-            "matchDepNames": [
-                "hashicorp/aws",
-                "aws"
+            "matchDepPatterns": [
+                "*aws"
             ],
-            "groupName": "hashicorp-aws"
+            "matchDepTypes": [
+                "terraform_provider"
+            ]
         }
     ]
 }
