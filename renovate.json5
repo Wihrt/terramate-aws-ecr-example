@@ -21,11 +21,11 @@
     },
     "packageRules": [
         {
-            "matchDepPatterns": [
-                "*aws"
+            "matchDepNames": [
+                "aws"
             ],
             "matchDepTypes": [
-                "terraform_provider"
+                "terraform-provider"
             ]
         }
     ]
